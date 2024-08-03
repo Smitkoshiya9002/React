@@ -8,7 +8,7 @@ const LiveChat = () => {
 
     const dispatch = useDispatch();
 
-    const chatMessage = useSelector((store) => store.chat.message);
+    const chatMessage = useSelector((store) => store.chat.fmessage);
 
     useEffect(() => {
         const i = setInterval(() => {
@@ -24,6 +24,8 @@ const LiveChat = () => {
 
         return () => clearInterval(i);
     }, []);
+
+    
 
     return (
         <>
