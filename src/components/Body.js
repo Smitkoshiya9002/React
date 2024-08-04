@@ -7,6 +7,7 @@ const Body = () => {
         <div className="flex">
             <SideBar />
             <Outlet />
+            {console.log("hello")}
         </div>
     );
 };
